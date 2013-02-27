@@ -1,139 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<title>Under Construction</title>
-	
-	<style type="text/css">
-		* { margin: 0; padding: 0; }
-		@-webkit-keyframes fade-in {
-			0%   { opacity: 0; }
-			50%   { opacity: 0; }
-			100% { opacity: 1; }
-		}
-		
-		body {
-			background: #fff url('img/bg.png') repeat 0 0;
-			-webkit-animation-name: fade-in;
-			-webkit-animation-duration: 1.5s;
-			-webkit-animation-timing-function: ease-in-out;
-		}
-		
-		#wrap {
-			font: 13px/17px "Helvetica Neue", Helvetica, Arial, sans-serif;
-			color: #696b6a;
-			text-shadow: 0 1px 1px #fff;
-			margin: 70px auto;
-			padding-top: 30px;
-			width: 300px;
-			position: relative;
-			z-index: 1;
-			overflow: hidden;
-		}
-		
-		#wrap a {
-			color: #696b6a;
-			font-weight: bold;
-		}
-		#wrap a:active {
-			color: #a4a5aa;
-		}
-		
-		#wrap:before,
-		#wrap:after,
-		#wrap b {
-			z-index: 10;
-			position: absolute;
-			content: '';
-			height: 150px;
-			width: 1px;
-			left: 40px;
-			top: 31px;
-			border-right: 1px solid #edebec;
-		}
-		#wrap b {
-			z-index: 100;
-			width: 99px;
-			height: 26px;
-			border: none;
-			top: 18px;
-			left: 100px;
-			background: url('img/tape.png') no-repeat 0 0;
-		}
-		#wrap:after { 
-			left: 47px;
-			border-right-color: #ede9e6;
-		}
+	<head>
+		<meta charset="utf-8" />
+		<title>Karoun Kasraie | Web Developer | contact@karoun.me</title>
 
-		#wrap .box {
-			position: relative;
-			width: 190px;
-			height: 100px;
-			padding: 20px 30px 30px;
-			border: 1px solid #d9d9d9;
-			margin: 0 auto 30px;
-			background: #fefefe url('img/line.png') repeat 0 -3px;
-			-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27);
-			-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27); 
-			box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27); 
-		}
-		
-		#wrap h1 {
-			font-size: 2.7em;
-			margin-bottom: 10px;
-		}
-		
-		#wrap p {
-			line-height: 1.3em;
-		}
-		
-		#wrap pre {
-			margin-top: 14px;
-			float: right;
-		}
+		<link rel="stylesheet" type="text/css" href="foundation.min.css" media="all" /> 
+		<link rel="stylesheet" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merriweather" media="all" />
+		<link rel="stylesheet" type="text/css" href="resume.css" media="all" />
+	</head>
+	<body>
+		<header id="hd" class="row">
+			<hgroup class="ten columns">
+				<h1>Karoun Kasraie</h1>
+				<h2>Web Developer</h2>
+			</hgroup>
 
-		#wrap .box:before,
-		#wrap .box:after {
-			content: '';
-			z-index: -1;
-			position: absolute;
-			left: 10px;
-			bottom: 10px;
-			width: 70%;
-			max-width: 300px;
-			height: 55%;
-			-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-			-moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-			-webkit-transform: skew(-15deg) rotate(-6deg);
-			-moz-transform: skew(-15deg) rotate(-6deg);
-			-ms-transform: skew(-15deg) rotate(-6deg);
-			-o-transform: skew(-15deg) rotate(-6deg);
-			transform: skew(-15deg) rotate(-6deg); 
-		}
+			<div class="two columns">
+				<hgroup class="contact-info text-right">
+					<h3><a href="mailto:contact@karoun.me">contact@karoun.me</a></h3>
+					<h3><a href="http://github.com/karoun">github.com/karoun</a></h3>
+					<a class="button" href="resume.pdf">Download Resume</a>
+				</hgroup><!--/.contact-info -->
+			</div>
+		</header><!--/#hd -->
 
-		#wrap .box:after {
-			left: auto;
-			right: 10px;
-			-webkit-transform: skew(15deg) rotate(6deg);
-			-moz-transform: skew(15deg) rotate(6deg);
-			-ms-transform: skew(15deg) rotate(6deg);
-			-o-transform: skew(15deg) rotate(6deg);
-			transform: skew(15deg) rotate(6deg); 
-		}
-	</style>
-</head>
-<body>
-	<div id="wrap">
-		<div class="box">
-			<h1>Hi there!</h1>
-			<p>
-				My personal page is under construction at the moment.
-				Why not check out my <a href="//github.com/karoun">Github profile</a> instead?
+		<article id="bd">
+			<section class="row">
+				<h2 class="three columns">About</h2>
+				<p class="nine columns enlarge">
+					Karoun Kasraie is a self-taught web developer and graduating college senior.
+					He has a passion for building great experiences and products with an eye for detail and tendency toward perfectionism.
+					He enjoys a hot cup of chai, a good book, and a good horn band.
+				</p>
+			</section><!-- /.row -->
+
+			<section class="row">
+				<h2 class="three columns">Skills</h2>
+
+				<div class="three columns talent">
+					<h2>Front-End</h2>
+					<p>Expertise in front-end development paradigms, including responsive grids, HTML5, CSS3, and various Javascript libraries, like jQuery and Knockout.</p>
+				</div>
+
+				<div class="three columns talent">
+					<h2>Back-End</h2>
+					<p>Extensive experience with various server-side languages and frameworks from PHP to Ruby on Rails, for apps, websites, and CMS conversions.</p>
+				</div>
+		                  
+				<div class="three columns talent">
+					<h2>Server</h2>
+					<p>Numerous site launches on both Nginx and Apache, with auto-deployment from Github, Bash scripting, and CDN/Varnish integration.</p>
+				</div>
+			</section><!-- /.row -->
+
+			<section class="row">
+				<h2 class="three columns">Technology</h2>
+
+				<ul class="three columns talent">
+					<li>HTML5, CSS3, Javascript</li>
+					<li>Responsive/Adaptive Design</li>
+					<li class="last">AJAX, Single-page apps</li>
+				</ul>
+				
+				<ul class="three columns talent">
+					<li>PHP, Python, Node.js, Ruby</li>
+					<li>MySQL, PostgreSQL, NoSQL</li>
+					<li class="last">Nginx, Apache, Bash</li>
+				</ul>
+
+				<ul class="three columns talent">
+					<li>OS X 10.4 - 10.8</li>
+					<li>Windows XP - 7</li>
+					<li class="last">*nix</li>
+				</ul>
+			</section><!-- /.row -->
+
+			<section class="row">
+				<h2 class="three columns">Experience</h2>
+
+				<div class="nine columns">
+					<div class="job">
+						<header class="row">
+							<hgroup class="nine mobile-three columns">
+								<h2><a href="http://npr.org">National Public Radio</a></h2>
+								<h3>Digital Media Intern</h3>
+							</hgroup>
+							<h4 class="three mobile-one columns text-right">2011 - Present</h4>
+						</header>
+
+						<p>Along with Agile development team, rolled out <a href="http://digitalservices.npr.org/post/npr-api-content-permissions-control">permissioning system</a> for NPR story API and Github-hosted documentation for the same.</p>
+
+						<p>Developed an <a href="http://dev.npr.org/query-generator.html">interactive query builder</a> for the above API using Knockout.js, which provides developer with immediate feedback and API output, based on various API parameters.
+
+						<p>Implemented <a href="http://www.npr.org/internedition/sum11/">responsive multimedia website</a> for Intern Edition radio show, the first in that program's history.</p>
+					</div>
+
+					<div class="job">
+						<header class="row">
+							<hgroup class="nine mobile-three columns">
+								<h2><a href="http://dailycal.org">The Daily Californian</a></h2>
+								<h3>Online Manager</h3>
+							</hgroup>
+							<h4 class="three mobile-one columns text-right">2010 - Present</h4>
+						</header>
+
+						<p>Responsible for upkeep of 111,000+ article, <a href="http://www.studentpress.org/acp/winners/opm12.html">award-winning</a> university news website, <a href="http://dailycal.org/">dailycal.org</a>, with over a dozen subdomains and numerous content sources.</p>
+
+						<p>Conducted transition of the same to a WordPress network hosted on Nginx, implemented a responsive grid system and new design, and developed numerous plugins for various site-specific functionality.</p>
+
+						<p>Replaced paper job applications with online application infrastructure, utilizing <a href="http://www.dropbox.com">Dropbox</a> and <a href="http://docs.google.com/">Google Spreadsheets</a>.</p>
+					</div>
+					
+					<div class="job">
+						<header class="row">
+							<hgroup class="nine mobile-three columns">
+								<h2><a href="http://tellefsenhall.org">Tellefsen Hall</a></h2>
+								<h3>Network Manager</h3>
+							</hgroup>
+							<h4 class="three mobile-one columns text-right">2009 - 2011</h4>
+						</header>
+
+						<p>Researched, initiated, and oversaw installation of a blanket wireless-N solution for a 5000 sq. ft facility. Maintained and improved a complex network, servicing over 40 concurrent users.</p>
+
+						<p>Updated website, <a href="http://tellefsenhall.org">tellefsenhall.org</a>, with a brand-new design, graphics, and identity and transitioned backend from plain HTML to WordPress.</p>
+					</div>
+					
+					<div class="job">
+						<header class="row">
+							<hgroup class="nine mobile-three columns">
+								<h2><a href="http://calband.berkeley.edu">University of California Marching Band</a></h2>
+								<h3>Member, Computer Committee</h3>
+							</hgroup>
+							<h4 class="three mobile-one columns text-right">2009 - Present</h4>
+						</header>
+
+						<p>Integrated 60+ page HTML website, <a href="http://calband.berkeley.edu">calband.berkeley.edu</a>, with WordPress for easy updating and maintenance.</p>
+
+						<p>Redesigned and implemented a new, AJAX-enabled, backwards-compatible login form using PHP, HTML, CSS, and jQuery.</p>
+
+						<p>Working with a 6-member team to redesign and rewrite large internal-use application. Wrote database design and accompanying ER diagrams, SQL schema, etc.</p>
+					</div>
+					
+					<div class="job">
+						<header class="row">
+							<hgroup class="nine mobile-three columns">
+								<h2><a href="http://venturacollege.edu">Ventura College</a></h2>
+								<h3>Web Developer, Student Technician</h3>
+							</hgroup>
+							<h4 class="three mobile-one columns text-right">2007 - 2010</h4>
+						</header>
+
+						<p>Responsible for maintaining external website, <a href="http://venturacollege.edu">venturacollege.edu</a>, using the OmniUpdate CMS, providing phone support to over 300 faculty, acting as primary Mac OS X field technician, and creating and maintaining an AJAX-enabled faculty phone/email directory.</p>
+					</div>
+					
+					<div class="job last">
+						<header class="row">
+							<hgroup class="nine mobile-three columns">
+								<h2><a href="http://karoun.me">Self-Employed</a></h2>
+								<h3>Freelance Web Developer and Consultant</h3>
+							</hgroup>
+							<h4 class="three mobile-one columns text-right">2004 - Present</h4>
+						</header>
+
+						<p><a href="http://dewith.com/">Worked</a> <a href="http://floorjournal.com/">with</a> <a href="http://bringingjinglesback.com/">a</a> <a href="http://wykowskilaw.com/">variety</a> <a href="http://buylocalberkeley.org/">of</a> <a href="http://bradjaldridge.com/">clients</a> to create CMS-enabled web presences, gave consultations regarding professional equipment and services, and built custom desktop workstations.</p>
+
+						<p>Portfolio available upon request.</p>
+					</div>
+				</div>
+			</section><!-- /.row -->
+
+			<section class="row">
+				<h2 class="three columns">Education</h2>
+
+				<ul class="nine columns talent">
+					<li class="job row">
+						<hgroup class="ten mobile-three columns">
+							<h2>University of California, Berkeley, '13</h2>
+							<h3>Computer Science, Music (minor)</h3>
+						</hgroup>
+						<h4 class="two mobile-one columns text-right">3.1 GPA</h4>
+					</li>
+					<li class="job row">
+						<hgroup class="ten mobile-three columns">
+							<h2>Ventura College, '09</h2>
+							<h3>72 Credit-hours</h3>
+						</hgroup>
+						<h4 class="two mobile-one columns text-right">3.8 GPA</h4>
+					</li>
+					<li class="job row last">
+						<hgroup class="ten mobile-three columns">
+							<h2>El Camino High School, '09</h2>
+							<h3>Valedictorian</h3>
+						</hgroup>
+						<h4 class="two mobile-one columns text-right">4.3 GPA</h4>
+					</li>
+				</ul>
+			</section><!-- /.row -->
+		</article><!-- /#bd -->
+
+		<footer id="ft" class="row">
+			<p class="twelve columns centered">
+				Karoun Kasraie &mdash; 
+				<a href="mailto:contact@karoun.me">contact@karoun.me</a> &mdash; 
+				(805) 290-4851
 			</p>
-			<pre>#! Karoun</pre>
-		</div>
-		<b></b>
-	</div>
-</body>
+		</footer><!-- /#footer -->
+	</body>
 </html>
